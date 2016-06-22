@@ -71,16 +71,25 @@
 
     .menu {
       margin-bottom: 1rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
     }
 
     .menu__item {
       font-weight: 800;
-      color: #FEA700;
+      color: #FFF;
+      background: #000;
       font-family: 'Nexa Bold';
       font-size: 1.5rem;
       padding: 3px 20px;
+      margin: 0 0.5rem;
       display: inline-block;
-      border-right: 3px solid #FEA700;
+      -webkit-transition: background-color 300ms ease, transform 300ms ease;
+         -moz-transition: background-color 300ms ease, transform 300ms ease;
+          -ms-transition: background-color 300ms ease, transform 300ms ease;
+           -o-transition: background-color 300ms ease, transform 300ms ease;
+              transition: background-color 300ms ease, transform 300ms ease;
     }
 
     .menu__item:last-child {
@@ -88,7 +97,8 @@
     }
 
     .menu__item:hover {
-      color: #9F6100
+      color: #FFF;
+      background: #333;
     }
 
   </style>
@@ -96,9 +106,10 @@
 <body>
   <div class="wrapper">
     <img src="logo.svg" alt="">
-    <h2>Soluciones de logística a la medida en el puerto de Veracruz</h2>
+    <h1>Soluciones Logísticas a la Medida</h1>
     <div class="menu">
-      <a class="menu__item" href="mailto:ventas.multimodal@grupoamigo.com">Envíanos un E-mail</a>
+      <a class="menu__item" href="somos.pdf">¿Quienes somos?</a>
+      <a class="menu__item" href="mailto:ventas.multimodal@grupoamigo.com">E-mail</a>
     </div>
     <a href="tel://+522299729237">+ 52-2299-729-237 al 39</a>
     <p>Carretera Paso del Toro-San Julián a 16 Km. del puerto de Veracruz y conectividad con Kansas City Southern y Ferrosur.</p>
