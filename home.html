@@ -22,6 +22,8 @@
 
     h1 {
       font-family: "Nexa Bold";
+      font-size: 2rem;
+      margin-bottom: 0;
     }
 
     h2 {
@@ -52,7 +54,8 @@
     a {
       color: #3A98D1;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.5rem;
+      font-family: "Nexa Bold";
       transition: color 300ms ease;
     }
 
@@ -74,10 +77,11 @@
       text-align: right;
       top: 0;
       position: absolute;
-      background: #FFF;
       width: 50%;
       left: 0;
       padding: 1rem;
+      background: #f9b400;
+      border-bottom: 7px solid #ffd800;
     }
 
     .menu__item {
@@ -87,6 +91,7 @@
       font-family: 'Nexa Bold';
       font-size: 1.5rem;
       padding: 3px 20px;
+      margin-right: 1rem;
       display: inline-block;
       -webkit-transition: background-color 300ms ease, transform 300ms ease;
          -moz-transition: background-color 300ms ease, transform 300ms ease;
@@ -96,7 +101,7 @@
     }
 
     .menu__item:last-child {
-      border-right: none;
+      margin-right: 0;
     }
 
     .menu__item:hover {
@@ -107,6 +112,15 @@
     .content {
       display: flex;
       height: 100%;
+    }
+
+    .left-panel {
+      padding: 1rem;
+      display: block;
+    }
+
+    .left-panel * {
+      max-width: 500px;
     }
 
     .left-panel,
@@ -139,16 +153,50 @@
       border-left: 7px solid #E79900;
     }
 
+    .logo {
+      max-width: 50%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .left-panel,
+      .right-panel {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      .menu {
+        position: relative;
+        width: 100%;
+      }
+
+      .right-panel {
+        height: 50%;
+      }
+
+      .content {
+        display: block;
+      }
+
+      .left-panel {
+        padding: 1rem;
+      }
+
+      .right-panel {
+        border-left: 0;
+        border-top: 7px solid #FEA700;
+      }
+    }
   </style>
 </head>
 <body>
   <article class="menu">
-    <a class="menu__item" href="somos.pdf">Nuestro Servicio</a>
-    <a class="menu__item" href="mailto:ventas.multimodal@grupoamigo.com">E-mail</a>
+    <a class="menu__item" href="somos.pdf">Nosotros</a>
+    <a class="menu__item" href="mailto:ventas.multimodal@grupoamigo.com">Contacto</a>
   </article>
   <section class="content">
     <div class="left-panel">
-      <img src="logo.svg" alt="">
+      <img class="logo" src="logo.svg" alt="">
       <h1>Soluciones Logísticas a la Medida</h1>
       <h2>Almacenajes y Maniobras Integrales del Golfo <span>S.A. de C.V.</span></h2>
       <a href="tel://+522299729237">+ 52-2299-729-237 al 39</a>
