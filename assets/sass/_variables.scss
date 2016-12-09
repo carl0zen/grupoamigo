@@ -1,0 +1,13 @@
+$yellow: #F3BB00;
+$text: #4A4A4A;
+$text-gray:#9B9B9B;
+$font-headers:'Rubik', sans-serif;
+$font-content: 'Open Sans', sans-serif;
+
+
+//Mixins
+
+@mixin background-opacity($color, $opacity: 0.8) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}

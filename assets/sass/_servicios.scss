@@ -1,0 +1,185 @@
+//SERVICIOS STYLES
+.servicios{
+	background:url('../images/servicios-bg.png') no-repeat;
+	background-size:100%;
+	padding: 0 0 4rem 0;
+
+	h1{
+		color:#FFF;
+		margin:4rem 0;
+	}
+
+	.lined-title {
+	  line-height: 0.5;
+	  text-align: center;
+		h1 {
+		  display: inline-block;
+		  position: relative;
+		  	&:before,
+			&:after {
+			  content: "";
+			  position: absolute;
+			  height: 5px;
+			  border-bottom: 1px solid white;
+			  top: 15px;
+			  box-sizing:border-box;
+			}
+			&:before {
+			  right: 100%;
+			  margin-right: 15px;
+			  width: 250px;
+			}
+			&:after {
+			  left: 100%;
+			  margin-left: 15px;
+			  width: 330px;
+			}
+		}
+	}
+
+}
+
+.servicios--thumb{
+	position:relative;
+	width:100%;
+	figcaption{
+		margin-right:15px;
+		padding:15% 20px 20px 20px;
+		text-align: center;
+		position:absolute;
+		z-index: 1;
+		text-transform: uppercase;
+		font-family: $font-headers;
+		@include background-opacity(#55555C, $opacity: 0.4);
+		border:1px solid #FFF;		
+		width: 100%;
+		height: 100%;
+		font-size:1.5rem;
+		line-height: 1.7rem;
+		color:#FFF;
+		font-weight:300;
+		&:hover{
+			@include background-opacity(#55555C, $opacity: 0.7);
+			border:3px solid #FFF;
+			cursor: pointer;
+		}
+	}
+}
+
+.servicios--panel{
+	background:#F3F3F3;
+	position:relative;
+
+	.arrow{
+		position:absolute;
+		top:0;
+		left:50%;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+  		border-top: 15px solid #eebb36;
+	}
+
+	h1{
+		font-size:1.8rem;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+}
+
+.servicios--panel--item{
+	display:none;
+	padding-top:4rem;
+	padding-bottom:4rem;
+}
+
+//MEDIA QUERIES
+
+//small screens
+@media screen and (max-width: 39.9375em) {
+	.servicios{
+		padding: 0;
+
+		h1{
+			margin:2rem 0;
+		}
+		figure{
+			margin:0;
+			img{
+				width: 100%;
+			}
+		}
+		.lined-title {
+			h1 {
+				&:before {
+					display: none;
+				}
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+	.servicios--thumb{
+		margin-left:0;
+	}
+	.servicios--panel{
+		h1{
+			line-height: 1.9rem;
+		}
+		img{
+			margin:1rem 0;
+		}
+	}
+}
+
+//Ipad portrait
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+	.servicios{
+		padding: 0 0 2rem 0;
+
+		h1{
+			margin:2rem 0;
+		}
+		figure{
+			margin:0;
+		}
+		.lined-title {
+			h1 {
+				&:before {
+					display: none;
+				}
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+	.servicios--thumb{
+		margin-left:0;
+	}
+
+}
+
+//medium screens
+@media only screen and (min-width: 40.063em) {
+	.servicios{
+		padding:0;
+		.lined-title {
+			h1 {
+				margin:1rem 0;
+				&:before {
+					display: none;
+				}
+				&:after {
+					display: none;
+				}
+			}
+		}
+		figure{
+			margin:1rem 0.3rem;
+		}
+	}
+}

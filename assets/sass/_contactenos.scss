@@ -1,0 +1,44 @@
+//CONTACTENOS STYLES
+
+.contactenos{
+	padding:4rem 0 0 0;
+	font-size:.9rem;
+
+	form{
+		margin-bottom:4rem;
+	}
+}
+
+.contactenos--description{
+	margin:2rem 0;
+}
+
+.contactenos--left{
+	background:#9B9B9B;
+	color:#FFF;
+	height:250px;
+	padding:4.7rem;
+	box-sizing:border-box;
+
+	h2{
+		text-transform: uppercase;
+		font-size:1.1rem;
+	}
+}
+
+.contactenos--right{
+	padding:0;
+}
+
+//MEDIA QUERIES
+
+//small screens
+@media screen and (max-width: 39.9375em) {
+
+	.contactenos{
+		padding:4rem 0 0 0;
+	}
+	.contactenos--left{
+		padding:2rem;
+	}
+}

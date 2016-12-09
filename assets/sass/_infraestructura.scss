@@ -1,0 +1,37 @@
+//INFRAESTRUCTURA STYLES
+
+.infraestructura{
+	padding:4rem 0;
+
+	h1{
+		margin-bottom:3.8rem;
+	}
+
+	figure{
+		margin:0;
+	}
+
+	figcaption{
+		font-size:1.3rem;
+		line-height: 1.45rem;
+		color:$yellow;
+		text-transform: uppercase;
+		margin-top:10px;
+		text-align: center;
+	}
+}
+
+
+//MEDIA QUERIES
+
+//small screens
+@media screen and (max-width: 39.9375em) {
+	.infraestructura{
+		figure{
+			margin:0 0 1rem 0;
+		}
+		h1{
+			margin-bottom: 1.2rem;
+		}
+	}
+}

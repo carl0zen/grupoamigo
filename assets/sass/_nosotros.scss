@@ -1,0 +1,65 @@
+//NOSOTROS STYLES
+
+#Nosotros{
+	overflow:inherit;
+}
+
+.nosotros{
+	@include background-opacity($yellow, 0.95);
+    margin-top: -15rem;
+    z-index: 1;
+    position: relative;
+}
+
+.nosotros--tile{
+	border:1px solid #fff;
+	padding:20px 25px;
+	margin:30px 5px 30px 5px;
+	min-height:200px;
+
+	h1{
+		color:#FFF;
+		font-size:1.8rem;
+		line-height: 2.6rem;
+		font-weight: 300;
+		text-transform: uppercase;
+
+		strong{
+			font-weight: 500;
+		}
+	}
+}
+
+//MEDIA QUERIES
+
+//small screens
+@media screen and (max-width: 39.9375em) {
+	.nosotros{
+		margin-top:0px !important;
+	}
+	.nosotros--tile{
+		text-align: center;
+		h1{
+			font-size:1.5rem;
+		}
+	}
+}
+
+//Ipad portrait
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+	.nosotros{
+		margin-top:0 !important;
+	}
+	.nosotros--tile{
+		min-height: 17rem;
+	}
+}
+//medium screens
+@media only screen and (min-width: 40.063em) {
+	.nosotros{
+		margin-top:-8rem;
+	}
+}
