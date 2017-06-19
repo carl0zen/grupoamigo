@@ -855,7 +855,7 @@ header, div, section {
 .ubicacion--left {
   background: #7a797f;
   color: #FFF;
-  height: 250px;
+  height: 100%;
   padding: 4.7rem;
   box-sizing: border-box;
 }
@@ -868,6 +868,10 @@ header, div, section {
 /* line 33, ../sass/_ubicacion.scss */
 .ubicacion--right {
   padding: 0;
+  height: 298px;
+}
+
+.ubicacion--right iframe {
   height: 100%;
 }
 
@@ -878,7 +882,8 @@ header, div, section {
 }
 
 /* line 2, ../sass/_clientes.scss */
-.nuestros-clientes h1 {
+.nuestros-clientes h1,
+.nuestros-servicios h1 {
   color: #FFF;
   text-transform: uppercase;
   font-family: Rubik, sans-serif;
@@ -888,4 +893,17 @@ header, div, section {
   font-size: 2rem;
   font-weight: 300;
   margin: 0 0 2rem 0;
+}
+
+.nuestros-servicios .row {
+  padding: 2em 0;
+  display: flex;
+  align-items: center;
+}
+
+.nuestros-servicios h2:after {
+  border-top: 4px solid orange;
+  display: block;
+  content: '';
+  width: 50px;
 }
