@@ -140,6 +140,7 @@ header, div, section {
   float: left;
   width: 80%;
   color: #FFF;
+  text-shadow: 0 0 4px black;
 }
 /* line 121, ../sass/_general.scss */
 .orbit-caption h2 {
@@ -501,20 +502,17 @@ header, div, section {
     margin-top: -8rem;
   }
 }
-/* line 5, ../sass/_infraestructura.scss */
-.infraestructura h1 {
-  margin-bottom: 3.8rem;
-}
+
 /* line 9, ../sass/_infraestructura.scss */
 .infraestructura h2 {
-  color: #FFF;
+  color: rgba(0,0,0,0.3);
   text-transform: uppercase;
   font-family: Rubik, sans-serif;
-  background-color: #000;
-  padding: 3rem 0;
+  background-color: #fea400;
+  padding: 1rem 0;
   text-align: center;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin: 0;
 }
 /* line 22, ../sass/_infraestructura.scss */
@@ -532,19 +530,18 @@ header, div, section {
 }
 /* line 34, ../sass/_infraestructura.scss */
 .infraestructura img {
-  width: 100%;
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
 }
 /* line 38, ../sass/_infraestructura.scss */
 .infraestructura .description {
-  background: #000;
-  /* The Fallback */
-  background: rgba(0, 0, 0, 0.8);
-  color: #FFF;
-  position: absolute;
-  z-index: 2;
-  width: 33.33%;
-  opacity: 0;
-  transition: opacity 1s ease;
+  height: auto !important;
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  margin: 0;
 }
 /* line 46, ../sass/_infraestructura.scss */
 .infraestructura .description .diamond-list {
@@ -573,23 +570,6 @@ header, div, section {
   .infraestructura .description {
     width: 100%;
   }
-}
-@media only screen and (min-width: 40.063em) {
-  /* line 82, ../sass/_infraestructura.scss */
-  .infraestructura .description {
-    width: 100%;
-  }
-}
-/* line 2, ../sass/_servicios.scss */
-.servicios {
-  background: url("../images/servicios-bg.png") no-repeat;
-  background-size: 100%;
-  padding: 0 0 4rem 0;
-}
-/* line 7, ../sass/_servicios.scss */
-.servicios h1 {
-  color: #FFF;
-  margin: 4rem 0;
 }
 /* line 12, ../sass/_servicios.scss */
 .servicios .lined-title {
@@ -772,28 +752,6 @@ header, div, section {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 40.063em) {
-  /* line 187, ../sass/_servicios.scss */
-  .servicios {
-    padding: 3rem 0 5rem 0;
-  }
-  /* line 191, ../sass/_servicios.scss */
-  .servicios .lined-title h1 {
-    margin: 1rem 0;
-  }
-  /* line 193, ../sass/_servicios.scss */
-  .servicios .lined-title h1:before {
-    display: none;
-  }
-  /* line 196, ../sass/_servicios.scss */
-  .servicios .lined-title h1:after {
-    display: none;
-  }
-  /* line 201, ../sass/_servicios.scss */
-  .servicios figure {
-    margin: 1rem 0.3rem;
-  }
-}
 /* line 3, ../sass/_contactenos.scss */
 .contactenos {
   padding: 2rem 0 0 0;
@@ -868,11 +826,10 @@ header, div, section {
 /* line 33, ../sass/_ubicacion.scss */
 .ubicacion--right {
   padding: 0;
-  height: 298px;
 }
 
 .ubicacion--right iframe {
-  height: 100%;
+  height: ;
 }
 
 /* line 38, ../sass/_ubicacion.scss */
@@ -882,8 +839,7 @@ header, div, section {
 }
 
 /* line 2, ../sass/_clientes.scss */
-.nuestros-clientes h1,
-.nuestros-servicios h1 {
+section > h1 {
   color: #FFF;
   text-transform: uppercase;
   font-family: Rubik, sans-serif;
@@ -892,7 +848,7 @@ header, div, section {
   text-align: center;
   font-size: 2rem;
   font-weight: 300;
-  margin: 0 0 2rem 0;
+  margin: 0;
 }
 
 .nuestros-servicios .row {
@@ -901,7 +857,7 @@ header, div, section {
   align-items: center;
 }
 
-.nuestros-servicios h2:after {
+h2:after {
   border-top: 4px solid orange;
   display: block;
   content: '';
