@@ -7,6 +7,9 @@
     <title>Grupo Amigo</title>
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="bower_components/mp-slider/mp-slider.html">
+    <link rel="import" href="bower_components/mp-slider/mp-slider-styles.html">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Rubik:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
   </head>
   <body>
@@ -18,176 +21,297 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-              <a href="#Inicio" class="active">Inicio</a>
-              <a href="#Nosotros">Nosotros</a>
-              <a href="#Ubicacion">Ubicación</a>
-              <a href="#Infraestructura">Infraestructura</a>
-              <a href="#Servicios">Servicios</a>
-              <a href="#Contacto">Contacto</a>
+        <a href="#Nosotros">Nosotros</a>
+        <a href="#Ubicacion">Ubicación</a>
+        <a href="#Servicios">Servicios</a>
+        <a href="#Infraestructura">Infraestructura</a>
+        <a href="#Divisiones">Divisiones</a>
+        <a href="#Contacto">Contacto</a>
       </div>
     </div>
     <!--MOBILE HEADER-->
     <div class="fixed-mobile-header">
-            <div class="title-bar">
-              <div class="title-bar-left">
-                <div class="row">
-                  <div class="medium-10 small-10 columns">
-                    <a href="index.html"><img src="assets/images/logo.png" alt="Grupo Amigo" class="logo"></a>
-                  </div>
-                  <div class="medium-2 small-2 columns">
-                    <button class="menu-icon" type="button" id="open-btn"></button>
-                  </div>
-                </div>
-              </div>
-            </div>          
+      <div class="title-bar">
+        <div class="title-bar-left">
+          <div class="row">
+            <div class="medium-10 small-10 columns">
+              <a href="#Inicio"><img src="assets/images/logo.png" alt="Grupo Amigo" class="logo"></a>
+            </div>
+            <div class="medium-2 small-2 columns">
+              <button class="menu-icon" type="button" id="open-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--HEADER-->
     <div class="top-menu"></div>
     <header>
-          <div class="row" data-sticky-container>
-            <div class="large-12 medium-12 sticky" data-sticky>
-              <div class="row">
-                <div class="large-3 medium-3 columns">
-                  <a href="index.html"><img src="assets/images/logo.png" alt="Grupo Amigo"></a>
-                </div>
-                <div class="large-9 medium-9 columns text-right">
-                  <nav>
-                    <ul class="menu">
-                      <li><a href="#Inicio" class="active">Inicio</a></li>
-                      <li><a href="#Nosotros">Nosotros</a></li>
-                      <li><a href="#Ubicacion">Ubicación</a></li>
-                      <li><a href="#Infraestructura">Infraestructura</a></li>
-                      <li><a href="#Servicios">Servicios</a></li>
-                      <li><a href="#Contacto">Contacto</a></li>
-                    </ul>
-                  </nav>
-                </div>    
-              </div>
+      <div class="row" data-sticky-container>
+        <div class="large-12 medium-12 sticky" data-sticky>
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <a href="#Inicio"><img src="assets/images/logo.png" alt="Grupo Amigo"></a>
+            </div>
+            <div class="large-9 medium-9 columns text-right">
+              <nav>
+                <ul class="menu">
+                  <li><a href="#Nosotros">Nosotros</a></li>
+                  <li><a href="#Ubicacion">Ubicación</a></li>
+                  <li><a href="#Servicios">Servicios</a></li>
+                  <li><a href="#Infraestructura">Infraestructura</a></li>
+                  <li><a href="#Divisiones">Divisiones</a></li>
+                  <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
+        </div>
+      </div>
     </header>
     <!--SLIDER-->
     <section id="Inicio" class="orbit" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" role="region" aria-label="Grupo Amigo Slides" data-orbit>
-          <ul class="orbit-container">
-            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#8249;</button>
-            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#8250;</button>
-            <li class="is-active orbit-slide">
-              <img class="orbit-image" src="assets/images/slides-00.png" alt="Space">
-              <figcaption class="orbit-caption">
-                <div class="row">
-                  <div class="large-6 medium-6 small-12 columns">
-                    <h1>Almacenaje y Logística.</h1>
-                    <div class="separator"></div>
-                  </div>
-                  <div class="large-6 medium-6 small-12 columns">
-                    <h2>A la medida de las necesidades <br> de su empresa</h2>
-                  </div>
-                </div>
-              </figcaption>
-            </li>
-            <li class="is-active orbit-slide">
-              <img class="orbit-image" src="assets/images/slides-01.png" alt="Space">
-              <figcaption class="orbit-caption">
-                <div class="row">
-                  <div class="large-6 medium-6 small-12 columns">
-                    <h1>Almacenaje y Logística.</h1>
-                    <div class="separator"></div>
-                  </div>
-                  <div class="large-6 medium-6 small-12 columns">
-                    <h2>A la medida de las necesidades <br> de su empresa</h2>
-                  </div>
-                </div>
-              </figcaption>
-            </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="assets/images/slides-02.png" alt="Space">
-              <figcaption class="orbit-caption">
-                <div class="row">
-                  <div class="large-6 medium-6 columns">
-                    <h1>Almacenaje y Logística.</h1>
-                    <div class="separator"></div>
-                  </div>
-                  <div class="large-6 medium-6 columns">
-                    <h2>A la medida de las necesidades <br> de su empresa</h2>
-                  </div>
-                </div>
-              </figcaption>
-            </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="assets/images/slides-03.png" alt="Space">
-              <figcaption class="orbit-caption">
-                <div class="row">
-                  <div class="large-6 medium-6 columns">
-                    <h1>Almacenaje y Logística.</h1>
-                    <div class="separator"></div>
-                  </div>
-                  <div class="large-6 medium-6 columns">
-                    <h2>A la medida de las necesidades <br> de su empresa</h2>
-                  </div>
-                </div>
-              </figcaption>
-            </li>
-          </ul>
-          <embed type="image/svg+xml" src="assets/images/triangle.svg" class="triangle"/>
+      <ul class="orbit-container">
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#8249;</button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#8250;</button>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="assets/images/slides-00.jpg" alt="Space">
+          <figcaption class="orbit-caption">
+            <div class="row">
+              <div class="large-6 medium-6 small-12 columns">
+                <h1>Modelo integral de servicio.</h1>
+              </div>
+            </div>
+          </figcaption>
+        </li>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="assets/images/slides-01.jpg" alt="Space">
+          <figcaption class="orbit-caption">
+            <div class="row">
+              <div class="large-6 medium-6 small-12 columns">
+                <h1>Soluciones Logísticas a la medida.</h1>
+              </div>
+            </div>
+          </figcaption>
+        </li>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="assets/images/slides-02.jpg" alt="Space">
+          <figcaption class="orbit-caption">
+            <div class="row">
+              <div class="large-6 medium-6 small-12 columns">
+                <h1>Procesos flexibles y a la medida.</h1>
+              </div>
+            </div>
+          </figcaption>
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="assets/images/slides-03.jpg" alt="Space">
+          <figcaption class="orbit-caption">
+            <div class="row">
+              <div class="large-6 medium-6 columns">
+                <h1>Enfoque en calidad total.</h1>
+              </div>
+            </div>
+          </figcaption>
+        </li>
+        <li class="orbit-slide">
+          <img class="orbit-image" src="assets/images/slides-04.jpg" alt="Space">
+          <figcaption class="orbit-caption">
+            <div class="row">
+              <div class="large-6 medium-6 columns">
+                <h1>Respuesta Inmediata</h1>
+              </div>
+            </div>
+          </figcaption>
+        </li>
+      </ul>
+      <embed type="image/svg+xml" src="assets/images/triangle.svg" class="triangle"/>
     </section>
     <!--MISION Y VALORES-->
     <section id="Nosotros">
-          <div class="row nosotros"> 
-            <div class="large-6 medium-6 columns">
-              <div class="nosotros--tile">
-                <h1>Nuestra <span>\</span> <strong>Visión</strong></h1>
-                <p>Ser líder en el mercado del manejo y almacenamiento de productos para lograr ser comercialmente la mejor alternativa de la zona.</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <div class="nosotros--tile">
-                <h1>Nuestra <span>\</span> <strong>Misión</strong></h1>
-                <p>Ofrecer el mejor servicio de logística al comercio nacional e internacional con una filosofía de calidad total entregando a nuestros clientes la mayor rentabilidad en sus operaciones logísticas.</p>
-              </div>
-            </div>
+      <div class="row nosotros">
+        <div class="large-6 medium-6 columns">
+          <div class="nosotros--tile">
+            <h1>Nuestra <span>\</span> <strong>Visión</strong></h1>
+            <p>Ser líder en el mercado del manejo y almacenamiento de productos para lograr ser la mejor alternativa de la zona.</p>
           </div>
+        </div>
+        <div class="large-6 medium-6 columns">
+          <div class="nosotros--tile">
+            <h1>Nuestra <span>\</span> <strong>Misión</strong></h1>
+            <p>Ofrecer el mejor servicio de logística al comercio nacional e internacional con una filosofía de calidad total entregando a nuestros clientes la mayor rentabilidad en sus operaciones logísticas.</p>
+          </div>
+        </div>
+      </div>
     </section>
     <!--UBICACION-->
     <section id="Ubicacion" class="ubicacion">
-          <div class="expanded row">
-            <div class="large-12 columns ubicacion--descripcion">
-              <h1 class="text-center">Ubicación Estratégica</h1>
-              <p>Las instalaciones de Amigo tienen conexión con el ferrocarril de KCSM y también con Ferrosur-Ferromex; lo que permite atender todas las regiones del país, Estados Unidos y Canadá como se muestra en el siguiente mapa.</p>
-            </div>
-          </div> 
+        <h1>Ubicación</h1>
           <div class="expanded row">
             <div class="large-6 columns no-gutter text-right">
-              <img src="assets/images/mapa.jpg" alt="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8475094849405!2d-96.26971418555878!3d19.201861587015763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x79ffd6f55a26946b!2sAlmacenajes+Y+Maniobras+Integrales+Del+Golfo%2C+S.A.+De+C.V.!5e0!3m2!1ses!2smx!4v1477975489377"width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
             </div>
-            <div class="large-6 columns no-gutter text-left">
+            <div class="large-6 columns no-gutter">
+              <h2>Estratégicamente Ubicado</h2>
+              <p>Las instalaciones de Amigo están ubicadas a
+                <a href="https://maps.google.com/maps?ll=19.196425,-96.26814&z=17&t=m&hl=en-US&gl=MX&mapclient=embed&cid=8790981346918306923" target="_blank">16 km del puerto</a> lo cual lo hacen una de las mejores alternativas de la zona.
+              </p>
+            </div>
+          </div>
+          <div class="row expanded">
+            <div class="large-6 medium-12 no-gutter columns">
+              <h2>Infraestructura Ferroviaria</h2>
+              <p>
+                Tenemos un andén ferroviario conectado a las vías <strong>KCSM</strong> y <strong>Ferrosur-Ferromex</strong>
+                para dar servicios de alcance mundial.
+              </p>
+            </div>
+            <div class="large-6 medium-12 no-gutter columns">
               <img src="assets/images/ubicacion-estrategica.jpg" alt="">
             </div>
-          </div> 
-          <div class="expanded row">
-            <div class="large-6 medium-6 columns ubicacion--left">
-              <div class="row">
-                <div class="large-6 medium-6 columns">
-                  <h2>Dirección</h2>
-                  <p>
-                    Av. Avenida #309  <br> Col. Nombre de la Colonia  <br>Ver, Ver, MX
-                  </p>
-                </div>
-                <div class="large-6 medium-6 columns">
-                  <h2>Teléfono</h2>
-                  <p>01(000) 000 00 00</p>
-                </div>
-              </div>
+          </div>
+
+        <div class="row expanded">
+          <div class="large-6 medium-12">
+            <a href="assets/images/mapa-high-res.JPG" target="_blank">
+              <img src="assets/images/mapa.jpg" alt="Mapa Ferroviario">
+            </a>
+          </div>
+          <div class="large-6 medium-12">
+            <h2>Alcance</h2>
+            <p>Nuestras infraestructura ferroviaria nos permite atender todas las regiones de <strong>México</strong>, <strong>Estados Unidos</strong> y
+              <strong>Canadá</strong>
+            </p>
+          </div>
+        </div>
+    </section>
+    <!-- SERVICIOS -->
+    <section id="Servicios" class="nuestros-servicios">
+      <h1>Nuestros Servicios</h1>
+      <div class="row large-12">
+        <p>En <strong>Grupo Amigo ®</strong> nuestro objetivo es la <strong>calidad total</strong>, con <strong>procesos flexibles</strong> que se adaptan a las necesidades del cliente. Nuestro proceso general como <strong>Almacen Logístico y Centro de Distribución</strong> se compone de los siguientes servicios :</p>
+      </div>
+      <div class="row large-12">
+        <div class="columns large-6">
+          <mp-slider controls bullets show-thumbs>
+            <div>
+                <img src="assets/images/servicios--arrivo.jpg" alt="Arrivo de Mercancía"/>
             </div>
-            <div class="large-6 medium-6 columns ubicacion--right">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8475094849405!2d-96.26971418555878!3d19.201861587015763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x79ffd6f55a26946b!2sAlmacenajes+Y+Maniobras+Integrales+Del+Golfo%2C+S.A.+De+C.V.!5e0!3m2!1ses!2smx!4v1477975489377" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <div>
+                <img src="assets/images/servicios--arrivo-2.jpg" alt="Arrivo de Mercancía"/>
             </div>
-          </div>   
+        </mp-slider>
+
+        </div>
+        <div class="columns large-6">
+          <h2>Recepción de transporte</h2>
+          <ol>
+            <li>Notificación de salida de origen</li>
+            <li>Arribo de transporte (FFCC o SPF) al almacén logístico</li>
+            <li>Aceptación y confirmación de producto</li>
+            <li>Verificación de documentos y producto</li>
+            <li>Instrucciones de almacenamiento</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row large-12">
+        <div class="columns large-6">
+          <h2>Pesaje ferrocarril y camión</h2>
+          <ol>
+            <li>Báscula ferroviaria de 180 TM</li>
+            <li>Báscula camionera tipo full de 120 TM</li>
+            <li>Pesaje solas / VGM (Verified Gross Mass)</li>
+          </ol>
+        </div>
+        <div class="columns large-6">
+          <img src="assets/images/servicios--pesaje.jpg" alt="Pesaje de Mercancía"/>
+        </div>
+      </div>
+
+      <div class="row large-12">
+        <div class="columns large-6">
+          <img src="assets/images/descarga.jpg" alt="Descarga de Mercancía"/>
+        </div>
+        <div class="columns large-6">
+          <h2>Descarga y desconsolidación</h2>
+          <ol>
+            <li>Graneles (SPF y FFCC)</li>
+            <li>Producto Envasado (SPF y FFCC)</li>
+            <li>Líquidos</li>
+            <li>Tubería y barras de acero</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row large-12">
+        <div class="columns large-6">
+          <h2>Almacenaje</h2>
+          <ol>
+            <li>A cielo abierto</li>
+            <li>Almacén techado</li>
+            <li>Contenedores en patio de vacíos y llenos</li>
+          </ol>
+        </div>
+        <div class="columns large-6">
+          <img src="assets/images/almacenaje.jpg" alt="Almacenaje de Mercancía"/>
+        </div>
+      </div>
+
+      <div class="row large-12">
+        <div class="columns large-6">
+          <img src="assets/images/maniobras.jpg" alt="Arrivo de Mercancía"/>
+        </div>
+        <div class="columns large-6">
+          <h2>Maniobras</h2>
+          <ol>
+            <li>Envasado</li>
+            <li>Mezclado</li>
+            <li>Etiquetado</li>
+            <li>Emplayado</li>
+            <li>Flejado</li>
+            <li>Trasvase de productos</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row large-12">
+        <div class="columns large-6">
+          <h2>Carga y consolidación</h2>
+          <ol>
+            <li>Granel a SPF y FFCC</li>
+            <li>Producto envasado SPF y FFCC</li>
+            <li>Carga de contenedores a SPF y FFCC</li>
+            <li>Tubería y Barras de Acero a SPF y FFCC</li>
+          </ol>
+        </div>
+        <div class="columns large-6">
+          <img src="assets/images/despacho.jpg" alt="Arrivo de Mercancía"/>
+        </div>
+      </div>
+
+      <div class="row large-12">
+        <div class="columns large-6">
+          <img src="assets/images/arrivo.jpg" alt="Arrivo de Mercancía"/>
+        </div>
+        <div class="columns large-6">
+          <h2>Crossdock</h2>
+          <ol>
+            <li>De contenedor a ferrotolva y viceversa</li>
+            <li>De ferrotolva a camión y viceversa</li>
+            <li>De ferrotolva a autotolva y viceversa</li>
+          </ol>
+        </div>
+      </div>
     </section>
     <!--INFRAESTRUCTURA-->
     <section id="Infraestructura" class="infraestructura">
+      <h1>Infraestructura</h1>
       <div class="expanded row">
-        <div class="large-4 columns no-gutter item">
+        <div class="columns no-gutter item">
           <h2>Inmobiliaria</h2>
           <div class="description">
             <ul class="diamond-list">
@@ -202,8 +326,9 @@
           </div>
           <img src="assets/images/infraestructura-01.jpg" alt="">
         </div>
-        <div class="large-4 columns no-gutter item">
-          <h2>Ferriviaria</h2>
+        <div class="columns no-gutter item">
+          <h2>Ferroviaria</h2>
+          <img src="assets/images/infraestructura-02.jpg" alt="">
           <div class="description">
             <ul class="diamond-list">
               <li>2 Espuelas ferroviarias, una conectada con el ferrocarril de KCSM por el lado norte y otra conectada con FERROSUR – FERROMEX por el lado sur</li>
@@ -212,9 +337,8 @@
               <li>1 trackmobile con capacidad para 5 unidades cargadas</li>
             </ul>
           </div>
-          <img src="assets/images/infraestructura-02.jpg" alt="">
         </div>
-        <div class="large-4 columns no-gutter item" >
+        <div class="columns no-gutter item" >
           <h2>Maquinaria y Equipo</h2>
           <div class="description">
             <ul class="diamond-list">
@@ -233,17 +357,11 @@
       </div>
     </section>
     <!--SERVICIOS-->
-    <section id="Servicios" class="servicios">
+    <section id="Divisiones" class="servicios">
+      <h1>Divisiones</h1>
           <!--Lista de servicios-->
           <div class="row">
             <div class="large-12 medium-12 ">
-              <div class="row">
-                <div class="large-12 medium-12">
-                  <div class="lined-title">
-                    <h1 class="text-center">Nuestros Servicios</h1>
-                  </div>
-                </div>
-              </div>
               <div class="row">
                 <div class="large-4 medium-4 columns">
                   <figure class="servicios--thumb" id="servicios-fertilizantes">
@@ -266,7 +384,7 @@
               <div class="row">
                 <div class="large-4 medium-4 columns">
                   <figure class="servicios--thumb" id="servicios-intermodal">
-                    <figcaption>División <br> Intermodal y Multimodal</figcaption>
+                    <figcaption>División <br> Intermodal</figcaption>
                     <img src="assets/images/servicios-04.png" alt="Division Intermodal">
                   </figure>
                 </div>
@@ -342,10 +460,10 @@
                 <span class="close">x</span>
                 <ul class="diamond-list">
                   <li>Recepción de polietileno a granel por ferrocarril</li>
-                  <li>Recepción de producto envasado a saco suelto y paletizado</li>  
-                  <li>Pesaje de ferrotolva</li>  
-                  <li>Inspección del equipo y revisión de sellos  </li>
-                  <li>Ingreso en el sistema del cliente</li>  
+                  <li>Recepción de producto envasado a saco suelto y paletizado</li> 
+                  <li>Pesaje de ferrotolva</li> 
+                  <li>Inspección del equipo y revisión de sellos </li>
+                  <li>Ingreso en el sistema del cliente</li> 
                   <li>Descarga del producto según indicaciones del cliente</li>
                   <li>Envasado y almacenaje del producto</li>
                   <li>Rotulado de producto en presentación de 25 Kg.</li>
@@ -365,22 +483,18 @@
               </div>
               <div class="large-6 medium-6 columns no-gutter">
                 <span class="close">x</span>
-                <ul class="diamond-list">
-                  <li>Patio de contenedores de 4,000 TEUS</li>
-                  <li>Capacidad de recibir y descargar 7 módulos ferroviarios de 5 pozos</li>
-                  <li>Recepción de contenedores vacíos o llenos, de ruta federal o ferrocarril</li>
+                <ol class="diamond-list">
+                  <li>Patio de contenedores de 8,000 TEUS</li>
+                  <li>Recepción de contenedores vacíos o llenos, de SPF o FFCC</li>
                   <li>Revisión y elaboración de EIR</li>
                   <li>Captura de información en el sistema de inventario y mensajes EDI</li>
                   <li>Limpieza y acondicionamiento de contenedores vacíos</li>
-                  <li>Almacenaje de contenedores en patio de vacíos y/ o llenos </li>
-
-                  <li>Consolidación y/o desconsolidación de contenedores</li>
-                  <li>Carga de contenedores a camión para entrega al puerto o patio de vaciós externo</li>
+                  <li>Carga de contenedores a camión para entrega al puerto o patio de vacíos externo</li>
                   <li>Carga de contenedores a ferrocarril</li>
                   <li>Carga y descarga de contenedores sobredimensionados</li>
                   <li>Control y supervisión de inventarios</li>
                   <li>Servicios de logística a la importación y exportación de contenedores</li>
-                </ul>
+                </ol>
               </div>
             </div>
           </div>
@@ -432,43 +546,45 @@
     </section>
     <!--NUESTROS CLIENTES-->
     <section id="nuestros-clientes" class="nuestros-clientes">
+      <h1>Nuestros Clientes</h1>
       <div class="expanded row">
         <div class="large-12">
-          <h1>Nuestros Clientes</h1>
           <img src="assets/images/clientes-all.jpg" alt="">
         </div>
       </div>
     </section>
     <!--CONTACTENOS-->
     <section id="Contacto" class="contactenos">
+      <h1>Contacto</h1>
           <div class="row">
             <div class="large-12 medium-12 columns">
               <!--<h1 class="text-center">Contáctenos</h1>-->
-              <p class="contactenos--description text-center">Si te interesan nuestros servicios, deja un mensaje y nosotros te contactamos</p>
+              <p class="contactenos--description text-center">Nuestros servicios se adaptan a sus necesidades, si le interesan nuestros servicios, por favor déjenos sus datos y un representante lo contactará a la brevedad.</p>
               <form action="">
                 <div class="row">
                   <div class="large-4 medium-4 columns">
                      <label>
                       Nombre
                       <input type="text">
-                    </label>             
+                    </label>
                   </div>
                   <div class="large-4 medium-4 columns">
                      <label>
                       Email
                       <input type="email">
-                    </label>             
+                    </label>
                   </div>
                   <div class="large-4 medium-4 columns">
                      <label>
                       Teléfono
                       <input type="number">
-                    </label>             
+                    </label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="large-12 medium-12 columns">
-                  <textarea rows="4" cols="50"></textarea>         
+                  <label>Describa el servicio que necesita</label>
+                  <textarea rows="4" cols="50"></textarea>
                   </div>
                 </div>
                 <div class="row">
@@ -482,15 +598,22 @@
     </section>
     <!--FOOTER-->
     <footer class="footer">
-          <div class="row">
-            <div class="large-12 medium-12 columns">
-              © Todos los derechos reservados 2016, Grupo Amigo
-            </div>
-          </div>
+      <div class="row">
+        <div class="large-12 medium-12 columns">
+          © Todos los derechos reservados 2016, Grupo Amigo
+        </div>
+      </div>
     </footer>
     <script src="assets/scripts/vendor/jquery.js"></script>
     <script src="assets/scripts/vendor/what-input.js"></script>
     <script src="assets/scripts/vendor/foundation.js"></script>
     <script src="assets/scripts/app.js"></script>
+    <div id="google_translate_element"></div>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-49917721-1'}, 'google_translate_element');
+      }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>
