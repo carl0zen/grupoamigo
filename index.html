@@ -7,6 +7,9 @@
     <title>Grupo Amigo</title>
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="bower_components/mp-slider/mp-slider.html">
+    <link rel="import" href="bower_components/mp-slider/mp-slider-styles.html">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Rubik:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
   </head>
   <body>
@@ -192,7 +195,16 @@
       </div>
       <div class="row large-12">
         <div class="columns large-6">
-          <img src="assets/images/servicios--arrivo.jpg" alt="Arrivo de Mercancía"/>
+          <mp-slider controls bullets show-thumbs>
+            <div>
+                <img src="assets/images/servicios--arrivo.jpg" alt="Arrivo de Mercancía"/>
+            </div>
+
+            <div>
+                <img src="assets/images/servicios--arrivo-2.jpg" alt="Arrivo de Mercancía"/>
+            </div>
+        </mp-slider>
+
         </div>
         <div class="columns large-6">
           <h2>Recepción de transporte</h2>
