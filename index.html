@@ -35,7 +35,7 @@
         <div class="title-bar-left">
           <div class="row">
             <div class="medium-10 small-10 columns">
-              <a href="#Inicio"><img src="assets/images/logo.png" alt="Grupo Amigo" class="logo"></a>
+              <a href="#Inicio"><img is="lazyload-image" src="logo.svg" alt="Grupo Amigo" class="logo"></a>
             </div>
             <div class="medium-2 small-2 columns">
               <button class="menu-icon" type="button" id="open-btn"></button>
@@ -52,7 +52,7 @@
         <div class="large-12 medium-12 sticky" data-sticky>
           <div class="row">
             <div class="large-3 medium-3 columns">
-              <a href="#Inicio"><img src="assets/images/logo.png" alt="Grupo Amigo"></a>
+              <a href="#Inicio"><img is="lazyload-image" src="logo.svg" alt="Grupo Amigo"></a>
             </div>
             <div class="large-9 medium-9 columns text-right">
               <nav>
@@ -72,61 +72,36 @@
     </header>
     <!--SLIDER-->
     <section id="Inicio" class="orbit" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" role="region" aria-label="Grupo Amigo Slides" data-orbit>
-      <ul class="orbit-container">
-        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#8249;</button>
-        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#8250;</button>
-        <li class="is-active orbit-slide">
-          <img class="orbit-image" src="assets/images/slides-00.jpg" alt="Space">
-          <figcaption class="orbit-caption">
-            <div class="row">
-              <div class="large-6 medium-6 small-12 columns">
-                <h1>Modelo integral de servicio.</h1>
-              </div>
-            </div>
-          </figcaption>
-        </li>
-        <li class="is-active orbit-slide">
-          <img class="orbit-image" src="assets/images/slides-01.jpg" alt="Space">
-          <figcaption class="orbit-caption">
-            <div class="row">
-              <div class="large-6 medium-6 small-12 columns">
-                <h1>Soluciones Logísticas a la medida.</h1>
-              </div>
-            </div>
-          </figcaption>
-        </li>
-        <li class="is-active orbit-slide">
-          <img class="orbit-image" src="assets/images/slides-02.jpg" alt="Space">
-          <figcaption class="orbit-caption">
-            <div class="row">
-              <div class="large-6 medium-6 small-12 columns">
-                <h1>Procesos flexibles y a la medida.</h1>
-              </div>
-            </div>
-          </figcaption>
-        </li>
-        <li class="orbit-slide">
-          <img class="orbit-image" src="assets/images/slides-03.jpg" alt="Space">
-          <figcaption class="orbit-caption">
-            <div class="row">
-              <div class="large-6 medium-6 columns">
-                <h1>Enfoque en calidad total.</h1>
-              </div>
-            </div>
-          </figcaption>
-        </li>
-        <li class="orbit-slide">
-          <img class="orbit-image" src="assets/images/slides-04.jpg" alt="Space">
-          <figcaption class="orbit-caption">
-            <div class="row">
-              <div class="large-6 medium-6 columns">
-                <h1>Respuesta Inmediata</h1>
-              </div>
-            </div>
-          </figcaption>
-        </li>
-      </ul>
-      <embed type="image/svg+xml" src="assets/images/triangle.svg" class="triangle"/>
+      <mp-slider controls>
+
+        <div>
+
+          <embed type="image/svg+xml" src="assets/images/triangle.svg" class="triangle" />
+          <h1>Modelo integral de servicio.</h1>
+          <img is="lazyload-image" src="assets/images/slides-00.jpg" alt="Arrivo de Mercancía"/>
+        </div>
+
+        <div>
+            <embed type="image/svg+xml" src="assets/images/triangle.svg" class="triangle" />
+            <h1>Soluciones Logísticas a la medida.</h1>
+            <img is="lazyload-image" src="assets/images/slides-01.jpg" alt="Arrivo de Mercancía"/>
+        </div>
+        <div>
+            <embed type="image/svg+xml" src="assets/images/triangle.svg" class="triangle" />
+            <h1>Procesos flexibles y a la medida.</h1>
+            <img is="lazyload-image" src="assets/images/slides-02.jpg" alt="Arrivo de Mercancía"/>
+        </div>
+        <div>
+            <embed type="image/svg+xml" src="assets/images/triangle.svg" class="triangle" />
+            <h1>Enfoque en calidad total.</h1>
+            <img is="lazyload-image" src="assets/images/slides-03.jpg" alt="Arrivo de Mercancía"/>
+        </div>
+        <div>
+            <embed type="image/svg+xml" src="assets/images/triangle.svg" class="triangle" />
+            <h1>Respuesta Inmediata.</h1>
+            <img is="lazyload-image" src="assets/images/slides-04.jpg" alt="Arrivo de Mercancía"/>
+        </div>
+      </mp-slider>
     </section>
     <!--MISION Y VALORES-->
     <section id="Nosotros">
@@ -169,14 +144,14 @@
               </p>
             </div>
             <div class="large-6 medium-12 no-gutter columns">
-              <img src="assets/images/ubicacion-estrategica.jpg" alt="">
+              <img is="lazyload-image" src="assets/images/ubicacion-estrategica.jpg" alt="">
             </div>
           </div>
 
         <div class="row expanded">
           <div class="large-6 medium-12">
             <a href="assets/images/mapa-high-res.JPG" target="_blank">
-              <img src="assets/images/mapa.jpg" alt="Mapa Ferroviario">
+              <img is="lazyload-image" src="assets/images/mapa.jpg" alt="Mapa Ferroviario">
             </a>
           </div>
           <div class="large-6 medium-12">
@@ -197,11 +172,11 @@
         <div class="columns large-6">
           <mp-slider controls bullets show-thumbs>
             <div>
-                <img src="assets/images/servicios--arrivo.jpg" alt="Arrivo de Mercancía"/>
+                <img is="lazyload-image" src="assets/images/servicios--arrivo.jpg" alt="Arrivo de Mercancía"/>
             </div>
 
             <div>
-                <img src="assets/images/servicios--arrivo-2.jpg" alt="Arrivo de Mercancía"/>
+                <img is="lazyload-image" src="assets/images/servicios--arrivo-2.jpg" alt="Arrivo de Mercancía"/>
             </div>
         </mp-slider>
 
@@ -228,13 +203,13 @@
           </ol>
         </div>
         <div class="columns large-6">
-          <img src="assets/images/servicios--pesaje.jpg" alt="Pesaje de Mercancía"/>
+          <img is="lazyload-image" src="assets/images/servicios--pesaje.jpg" alt="Pesaje de Mercancía"/>
         </div>
       </div>
 
       <div class="row large-12">
         <div class="columns large-6">
-          <img src="assets/images/descarga.jpg" alt="Descarga de Mercancía"/>
+          <img is="lazyload-image" src="assets/images/descarga.jpg" alt="Descarga de Mercancía"/>
         </div>
         <div class="columns large-6">
           <h2>Descarga y desconsolidación</h2>
@@ -257,13 +232,13 @@
           </ol>
         </div>
         <div class="columns large-6">
-          <img src="assets/images/almacenaje.jpg" alt="Almacenaje de Mercancía"/>
+          <img is="lazyload-image" src="assets/images/almacenaje.jpg" alt="Almacenaje de Mercancía"/>
         </div>
       </div>
 
       <div class="row large-12">
         <div class="columns large-6">
-          <img src="assets/images/maniobras.jpg" alt="Arrivo de Mercancía"/>
+          <img is="lazyload-image" src="assets/images/maniobras.jpg" alt="Arrivo de Mercancía"/>
         </div>
         <div class="columns large-6">
           <h2>Maniobras</h2>
@@ -289,13 +264,13 @@
           </ol>
         </div>
         <div class="columns large-6">
-          <img src="assets/images/despacho.jpg" alt="Arrivo de Mercancía"/>
+          <img is="lazyload-image" src="assets/images/despacho.jpg" alt="Arrivo de Mercancía"/>
         </div>
       </div>
 
       <div class="row large-12">
         <div class="columns large-6">
-          <img src="assets/images/arrivo.jpg" alt="Arrivo de Mercancía"/>
+          <img is="lazyload-image" src="assets/images/arrivo.jpg" alt="Arrivo de Mercancía"/>
         </div>
         <div class="columns large-6">
           <h2>Crossdock</h2>
@@ -324,11 +299,11 @@
               <li>Patio para almacenamiento de contenedores de 30,000 m2</li>
             </ul>
           </div>
-          <img src="assets/images/infraestructura-01.jpg" alt="">
+          <img is="lazyload-image" src="assets/images/infraestructura-01.jpg" alt="">
         </div>
         <div class="columns no-gutter item">
           <h2>Ferroviaria</h2>
-          <img src="assets/images/infraestructura-02.jpg" alt="">
+          <img is="lazyload-image" src="assets/images/infraestructura-02.jpg" alt="">
           <div class="description">
             <ul class="diamond-list">
               <li>2 Espuelas ferroviarias, una conectada con el ferrocarril de KCSM por el lado norte y otra conectada con FERROSUR – FERROMEX por el lado sur</li>
@@ -352,7 +327,7 @@
               <li>2 cargadores frontales (pettibone) para la carga de tubería</li>
             </ul>
           </div>
-          <img src="assets/images/infraestructura-03.jpg" alt="">
+          <img is="lazyload-image" src="assets/images/infraestructura-03.jpg" alt="">
         </div>
       </div>
     </section>
@@ -366,38 +341,38 @@
                 <div class="large-4 medium-4 columns">
                   <figure class="servicios--thumb" id="servicios-fertilizantes">
                     <figcaption >División <br>Fertilizantes</figcaption>
-                    <img src="assets/images/servicios-01.png" alt="Division Fertilizantes">
+                    <img is="lazyload-image" src="assets/images/servicios-01.png" alt="Division Fertilizantes">
                   </figure>
 
                 </div>
                 <div class="large-4 medium-4 columns" >
                   <figure class="servicios--thumb" id="servicios-tuberias">
                     <figcaption>División <br>Tubería</figcaption>
-                    <img src="assets/images/servicios-02.png" alt="Division Tuberia">
+                    <img is="lazyload-image" src="assets/images/servicios-02.png" alt="Division Tuberia">
                 </div>
                 <div class="large-4 medium-4 columns">
                   <figure class="servicios--thumb" id="servicios-polimeros">
                     <figcaption>División <br>Polímeros</figcaption>
-                    <img src="assets/images/servicios-03.png"  alt="Division Polimeros">
+                    <img is="lazyload-image" src="assets/images/servicios-03.png"  alt="Division Polimeros">
                 </div>
               </div>
               <div class="row">
                 <div class="large-4 medium-4 columns">
                   <figure class="servicios--thumb" id="servicios-intermodal">
                     <figcaption>División <br> Intermodal</figcaption>
-                    <img src="assets/images/servicios-04.png" alt="Division Intermodal">
+                    <img is="lazyload-image" src="assets/images/servicios-04.png" alt="Division Intermodal">
                   </figure>
                 </div>
                 <div class="large-4 medium-4 columns">
                   <figure class="servicios--thumb" id="servicios-lacteos">
                     <figcaption>División <br>Lácteos</figcaption>
-                    <img src="assets/images/servicios-05.png" alt="Division Lacteos">
+                    <img is="lazyload-image" src="assets/images/servicios-05.png" alt="Division Lacteos">
                   </figure>
                 </div>
                 <div class="large-4 medium-4 columns">
                   <figure class="servicios--thumb" id="servicios-sanidad">
                     <figcaption>Verificación de <br>Sanidad Vegetal</figcaption>
-                    <img src="assets/images/servicios-06.png" alt="Punto de Verificacion de Sanidad Vegetal">
+                    <img is="lazyload-image" src="assets/images/servicios-06.png" alt="Punto de Verificacion de Sanidad Vegetal">
                   </figure>
                 </div>
               </div>
@@ -410,7 +385,7 @@
             <div class="arrow"></div>
             <div class="expanded row">
               <div class="large-6 medium-6 columns no-gutter">
-                <img src="assets/images/servicios-big-01.jpg" alt="Division Fertilizantes">
+                <img is="lazyload-image" src="assets/images/servicios-big-01.jpg" alt="Division Fertilizantes">
               </div>
               <div class="large-6 medium-6 columns no-gutter">
                 <span class="close">x</span>
@@ -433,7 +408,7 @@
             <div class="arrow"></div>
               <div class="expanded row">
                 <div class="large-6 medium-6 columns no-gutter">
-                  <img src="assets/images/servicios-big-02.jpg" alt="Division Tuberias">
+                  <img is="lazyload-image" src="assets/images/servicios-big-02.jpg" alt="Division Tuberias">
                 </div>
                 <div class="large-6 medium-6 columns no-gutter">
                   <span class="close">x</span>
@@ -454,7 +429,7 @@
             <div class="arrow"></div>
             <div class="expanded row">
               <div class="large-6 medium-6 columns no-gutter">
-                <img src="assets/images/servicios-big-03.jpg" alt="Division Polimeros">
+                <img is="lazyload-image" src="assets/images/servicios-big-03.jpg" alt="Division Polimeros">
               </div>
               <div class="large-6 medium-6 columns no-gutter">
                 <span class="close">x</span>
@@ -479,7 +454,7 @@
             <div class="arrow"></div>
             <div class="expanded row">
               <div class="large-6 medium-6 columns no-gutter">
-                <img src="assets/images/servicios-big-04.jpg" alt="Division Intermodal">
+                <img is="lazyload-image" src="assets/images/servicios-big-04.jpg" alt="Division Intermodal">
               </div>
               <div class="large-6 medium-6 columns no-gutter">
                 <span class="close">x</span>
@@ -502,7 +477,7 @@
             <div class="arrow"></div>
             <div class="expanded row">
               <div class="large-6 medium-6 columns no-gutter">
-                <img src="assets/images/servicios-big-05.jpg" alt="Division Lacteos">
+                <img is="lazyload-image" src="assets/images/servicios-big-05.jpg" alt="Division Lacteos">
               </div>
               <div class="large-6 medium-6 columns no-gutter">
                 <span class="close">x</span>
@@ -524,7 +499,7 @@
             <div class="arrow"></div>
             <div class="expanded row">
               <div class="large-6 medium-6 columns no-gutter">
-                <img src="assets/images/servicios-big-06.jpg" alt="Division Sanidad">
+                <img is="lazyload-image" src="assets/images/servicios-big-06.jpg" alt="Division Sanidad">
               </div>
               <div class="large-6 medium-6 columns no-gutter">
                 <span class="close">x</span>
@@ -549,7 +524,7 @@
       <h1>Nuestros Clientes</h1>
       <div class="expanded row">
         <div class="large-12">
-          <img src="assets/images/clientes-all.jpg" alt="">
+          <img is="lazyload-image" src="assets/images/clientes-all.jpg" alt="">
         </div>
       </div>
     </section>
