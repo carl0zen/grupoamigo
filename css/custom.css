@@ -16,13 +16,13 @@
   div.nav-container {
     min-height: 0 !important; 
   }
+}
 
-  .nav-bar a {
-    height: auto !important;
-  }
+.nav-bar a {
+  height: auto !important;
+}
 
-  img.logo {
-    min-height: 45px;
-    padding: 1em;
-  }
+img.logo {
+  min-height: 45px;
+  padding: 1em;
 }
