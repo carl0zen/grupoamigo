@@ -8,4 +8,8 @@
   section.cover.fullscreen.image-bg.overlay {
     height: 800px !important;
   }
+
+  div.nav-container {
+    min-height: 0 !important; 
+  }
 }
