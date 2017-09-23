@@ -1,5 +1,5 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   section.hidden-xs {
     height: 0 !important;
     display: none;
