@@ -18,12 +18,21 @@
   }
 }
 
-.nav-bar a {
+div.nav-bar a {
   height: auto !important;
 }
 
+div.nav-bar {
+  height: 80px;
+  max-height: 80px;
+  line-height: 80px;
+  height: 80px;
+  max-height: 80px;
+  border: none;
+}
+
 img.logo {
-  min-height: 45px !important;
+  min-height: 80px !important;
   padding: 1em !important;
   max-height: auto;
 }
