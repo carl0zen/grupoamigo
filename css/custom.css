@@ -38,6 +38,7 @@ div.nav-container {
 
 div.nav-container nav {
   display: none;
+  transform: translate3d(0,0,0);
 
 }
 
