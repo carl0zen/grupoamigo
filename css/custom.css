@@ -1,5 +1,9 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 @media only screen and (max-device-width: 780px) {
+  .nav-container {
+    min-height: auto !important;
+  }
+
   section.hidden-xs {
     height: 0 !important;
     display: none;
@@ -11,5 +15,14 @@
 
   div.nav-container {
     min-height: 0 !important; 
+  }
+
+  .nav-bar a {
+    height: auto !important;
+  }
+
+  img.logo {
+    min-height: 45px;
+    padding: 1em;
   }
 }
