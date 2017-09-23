@@ -31,9 +31,34 @@ div.nav-bar {
   border: none;
 }
 
+div.nav-container {
+  position: absolute;
+}
+
+div.nav-container nav {
+  display: none;
+}
+
+div.nav-container nav.scrolled {
+  display: block;
+}
+
 img.logo {
   min-height: 80px !important;
   max-height: auto;
+}
+
+.main-container section:first-of-type::before {
+  content: '';
+  position: absolute;
+  background-image: url("/img/logo-white.svg");
+  height: 210px;
+  width: 100%;
+  background-size: 250px;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-left: 4em;
 }
 
 
