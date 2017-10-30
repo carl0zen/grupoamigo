@@ -40,9 +40,9 @@ $(document).ready(function() {
 
     // Update scroll variable for scrolling functions
 
-    addEventListener('scroll', function() {
-        mr_scrollTop = window.pageYOffset;
-    }, false);
+    // addEventListener('scroll', function() {
+    //     mr_scrollTop = window.pageYOffset;
+    // }, false);
 
     // Append .background-image-holder <img>'s as CSS backgrounds
 
@@ -80,43 +80,43 @@ $(document).ready(function() {
 
     // Navigation
 
-    if (!$('nav').hasClass('fixed') && !$('nav').hasClass('absolute')) {
+    // if (!$('nav').hasClass('fixed') && !$('nav').hasClass('absolute')) {
 
-        // Make nav container height of nav
+    //     // Make nav container height of nav
 
-        $('.nav-container').css('min-height', $('nav').outerHeight(true));
+    //     $('.nav-container').css('min-height', $('nav').outerHeight(true));
 
-        $(window).resize(function() {
-            $('.nav-container').css('min-height', $('nav').outerHeight(true));
-        });
+    //     $(window).resize(function() {
+    //         $('.nav-container').css('min-height', $('nav').outerHeight(true));
+    //     });
 
-        // Compensate the height of parallax element for inline nav
+    //     // Compensate the height of parallax element for inline nav
 
-        if ($(window).width() > 768) {
-            $('.parallax:nth-of-type(1) .background-image-holder').css('top', -($('nav').outerHeight(true)));
-        }
+    //     if ($(window).width() > 768) {
+    //         $('.parallax:nth-of-type(1) .background-image-holder').css('top', -($('nav').outerHeight(true)));
+    //     }
 
-        // Adjust fullscreen elements
+    //     // Adjust fullscreen elements
 
-        if ($(window).width() > 768) {
-            $('section.fullscreen:nth-of-type(1)').css('height', ($(window).height() - $('nav').outerHeight(true)));
-        }
+    //     if ($(window).width() > 768) {
+    //         $('section.fullscreen:nth-of-type(1)').css('height', ($(window).height() - $('nav').outerHeight(true)));
+    //     }
 
-    } else {
-        $('body').addClass('nav-is-overlay');
-    }
+    // } else {
+    //     $('body').addClass('nav-is-overlay');
+    // }
 
-    if ($('nav').hasClass('bg-dark')) {
-        $('.nav-container').addClass('bg-dark');
-    }
+    // if ($('nav').hasClass('bg-dark')) {
+    //     $('.nav-container').addClass('bg-dark');
+    // }
 
 
     // Fix nav to top while scrolling
 
-    mr_nav = $('body .nav-container nav:first');
-    mr_navOuterHeight = $('body .nav-container nav:first').outerHeight();
-        mr_fixedAt = typeof mr_nav.attr('data-fixed-at') !== typeof undefined ? parseInt(mr_nav.attr('data-fixed-at').replace('px', '')) : parseInt($('section:nth-of-type(1)').outerHeight());
-    window.addEventListener("scroll", updateNav, false);
+    // mr_nav = $('body .nav-container nav:first');
+    // mr_navOuterHeight = $('body .nav-container nav:first').outerHeight();
+    //     mr_fixedAt = typeof mr_nav.attr('data-fixed-at') !== typeof undefined ? parseInt(mr_nav.attr('data-fixed-at').replace('px', '')) : parseInt($('section:nth-of-type(1)').outerHeight());
+    // window.addEventListener("scroll", updateNav, false);
 
     // Menu dropdown positioning
 

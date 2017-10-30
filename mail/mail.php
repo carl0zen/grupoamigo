@@ -20,8 +20,8 @@ $sendingAccountUsername     = getenv('EMAIL_USERNAME');;
 $sendingAccountPassword     = getenv('EMAIL_PASSWORD');
 
 // Recipient (To:) Details  - Change this to the email details of who will receive all the emails from the website.
-$recipientEmail             = 'carlosepp@gmail.com'; // REQUIRED value.
-$recipientName              = 'Fortunato Perez';             // REQUIRED value.
+$recipientEmail             = 'ventas.multimodal@grupoamigo.com, division.multimodal@grupoamigo.com, nicolasjimenez@grupoamigo.com, carlosepp@gmail.com'; // REQUIRED value.
+$recipientName              = 'Ventas | Grupo Amigo';             // REQUIRED value.
 
 // Email details            - Change these to suit your website needs
 $emailSubject               = 'Grupo Amigo | Hay un nuevo prospecto de Cliente'; // REQUIRED value. Subject of the email that the recipient will see

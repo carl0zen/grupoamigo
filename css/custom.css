@@ -71,19 +71,6 @@ img.logo {
   max-height: auto;
 }
 
-.main-container section:first-of-type::before {
-  content: '';
-  position: absolute;
-  background-image: url("/img/logo-white.svg");
-  height: 210px;
-  width: 100%;
-  background-size: 250px;
-  z-index: 10;
-  background-repeat: no-repeat;
-  background-position: left;
-  margin-left: 4em;
-}
-
 .main-container section:first-of-type {
   height: 100vh !important;
 }
@@ -180,13 +167,17 @@ img.logo {
   display: flex;
   text-align: left;
   align-items: center;
+  padding: 12px !important;
 }
 
 .feature h1 {
   flex: 2;
   text-align: center;
+  font-size: 35px;
+  margin: 0;
 }
 
 .feature h5 {
   flex: 8;
+  margin: 0;
 }
