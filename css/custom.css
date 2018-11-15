@@ -68,7 +68,7 @@ div.nav-container nav.scrolled {
 
 img.logo {
   min-height: 80px !important;
-  max-height: auto;
+  height: 80px;
 }
 
 .main-container section:first-of-type {
